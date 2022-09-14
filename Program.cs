@@ -23,6 +23,10 @@ namespace Design_Patterns
 
             #endregion
 
+            #region Factory Method
+            var buttonFor2K = MyButton.CreateButtonFor2K();
+            #endregion
+
 
 
             Console.ReadLine();
