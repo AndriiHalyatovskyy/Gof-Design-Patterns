@@ -1,4 +1,5 @@
-﻿using Design_Patterns.Factories;
+﻿using Design_Patterns.Builders;
+using Design_Patterns.Factories;
 using System;
 using static Design_Patterns.Factories.HotDrinkMachine;
 
@@ -14,6 +15,12 @@ namespace Design_Patterns
             var someDrink = machine.MakeDrink(AvailableDrink.SomeDrink, 500);
             someDrink.Consume();
             tea.Consume();
+            #endregion
+
+            #region Builder
+            Builder builder = new Builder();
+            var macBook = builder.BuildAppleMacBook2022(new LaptopBuilder());
+
             #endregion
 
 
